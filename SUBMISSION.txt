@@ -1,0 +1,62 @@
+Status : INCOMPLETE - at least one check did not pass
+Points : 0 / 40  (from check.py; counts only when the Git and GitHub checks pass)
+
+CS 1430 Assignment 2: The Cost of College
+GitHub user : unknown
+Repository  : unknown
+Commit      : unknown
+Message     : 
+Author      : 
+Committed   : 
+Checked     : 2026-10-07 13:26:02 CDT
+Python      : 3.12.3
+
+================================================================
+CHECK RESULTS
+================================================================
+
+--- Toolchain ---
+[PASS] Python 3.12.3 is installed
+[PASS] main.py is in this folder
+[PASS] main.py runs without an error
+[PASS] The constants are unchanged
+[PASS] The launch lines are in place
+
+--- Your five functions (6 points each) ---
+[FAIL] cost_per_semester gives back the right values  (0/6 pts)
+   > For annual_cost = 14601, expected 7300.50 but got 0
+   > Still returning 0? Replace the stub with your calculation.
+[FAIL] cost_per_month gives back the right values  (0/6 pts)
+   > For annual_cost = 14601, expected 1622.33 but got 0
+   > Still returning 0? Replace the stub with your calculation.
+[FAIL] cost_per_day gives back the right values  (0/6 pts)
+   > For annual_cost = 14601, expected 97.34 but got 0
+   > Still returning 0? Replace the stub with your calculation.
+[FAIL] cost_per_credit gives back the right values  (0/6 pts)
+   > For annual_cost = 14601, credits = 15, expected 486.70 but got 0
+   > Still returning 0? Replace the stub with your calculation.
+[FAIL] cost_per_class gives back the right values  (0/6 pts)
+   > For annual_cost = 14601, credits = 15, expected 32.45 but got 0
+   > Still returning 0? Replace the stub with your calculation.
+
+--- Your program (10 points) ---
+[FAIL] The menu runs from start to Q without an error  (0/5 pts)
+   > Your program ran to Q, but none of the five amounts ever appeared.
+   > Add the two input prompts and connect menu options 1 to 5 to your functions.
+[SKIP] Options 1 to 5 print all five amounts  (0/5 pts)
+
+--- Git and GitHub (required for your points to count) ---
+[PASS] Git is installed
+[PASS] This folder is a Git repository
+[FAIL] You have committed your own work
+   > So far there is only the template's first commit.
+   > In Source Control, type a message and click Commit.
+
+POINTS FROM check.py: 0 / 40
+
+NOTE: AI_NOTES.md still has (write here) placeholders. Fill it in before you submit.
+
+================================================================
+PROGRAM OUTPUT  (typed: 14601, 15, 1, 2, 3, 4, 5, Q)
+================================================================
+Choose an option: Choose an option: Choose an option: Choose an option: Choose an option: Choose an option: Choose an option: Choose an option:
