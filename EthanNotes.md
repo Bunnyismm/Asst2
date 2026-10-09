@@ -29,7 +29,9 @@ that they have to take in, which is what I stated as a concept previously. Avoid
 1. $14,601 dollars per year and 15 credits are placeholder values for the project. Yet in the document they're kind of a
     sad little footnote, make the two values bigger, or more noticeable for people who don't notice the bolding, otherwise
     the rest of the values in the document are seemingly coming from nowhere.
-    ####ctd.####
+
+    ***ctd.***
+
     It's confusing to have two instances of Dollars per year and credits per year, ($14,601 / 15)($24,000 / 12). When I did this assignment
     It didn't properly convey that the calculation needed to work for more than one value, I just thought it was broken because it kept switching.
     Either tell the student that it needs to work for more than one (even though that concept is obvious), or clarify why it's checking two values.
@@ -52,9 +54,10 @@ that they have to take in, which is what I stated as a concept previously. Avoid
     I can assume that this has already been discussed, though. And a program that automatically checks a programs code is pretty linear in nature.
 
 
-### My suggestion ###
+### closing remarks ###
 
 In general, the lab itself isn't bad, it's pretty good for what it's trying to accomplish. With that being said,
+the documentation DEFINITELY needs some work.
 functions are a large part of EVERY coding experience, and are pretty integral. So next week when you introduce them
 I humbly suggest making an excercise with PioneerPython on making a void function that calls something with a parameter.
 Because of how important functions serve to be, being hands on with how they work is extremely important.
