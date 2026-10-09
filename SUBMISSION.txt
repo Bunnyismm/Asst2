@@ -1,5 +1,5 @@
 Status : INCOMPLETE - at least one check did not pass
-Points : 0 / 40  (from check.py; counts only when the Git and GitHub checks pass)
+Points : 10 / 40  (from check.py; counts only when the Git and GitHub checks pass)
 
 CS 1430 Assignment 2: The Cost of College
 GitHub user : unknown
@@ -8,15 +8,15 @@ Commit      : unknown
 Message     : 
 Author      : 
 Committed   : 
-Checked     : 2026-10-07 13:26:02 CDT
-Python      : 3.12.3
+Checked     : 2026-10-08 20:56:33 Central Daylight Time
+Python      : 3.14.8
 
 ================================================================
 CHECK RESULTS
 ================================================================
 
 --- Toolchain ---
-[PASS] Python 3.12.3 is installed
+[PASS] Python 3.14.8 is installed
 [PASS] main.py is in this folder
 [PASS] main.py runs without an error
 [PASS] The constants are unchanged
@@ -24,39 +24,91 @@ CHECK RESULTS
 
 --- Your five functions (6 points each) ---
 [FAIL] cost_per_semester gives back the right values  (0/6 pts)
-   > For annual_cost = 14601, expected 7300.50 but got 0
-   > Still returning 0? Replace the stub with your calculation.
+   > For annual_cost = 14601, expected the number 7300.50 but got text: '7300.50'
+   > Return the number itself. Format it as money only when you print it.
 [FAIL] cost_per_month gives back the right values  (0/6 pts)
-   > For annual_cost = 14601, expected 1622.33 but got 0
-   > Still returning 0? Replace the stub with your calculation.
+   > For annual_cost = 14601, expected the number 1622.33 but got text: '1622.33'
+   > Return the number itself. Format it as money only when you print it.
 [FAIL] cost_per_day gives back the right values  (0/6 pts)
-   > For annual_cost = 14601, expected 97.34 but got 0
-   > Still returning 0? Replace the stub with your calculation.
+   > For annual_cost = 14601, expected the number 97.34 but got text: '97.34'
+   > Return the number itself. Format it as money only when you print it.
 [FAIL] cost_per_credit gives back the right values  (0/6 pts)
-   > For annual_cost = 14601, credits = 15, expected 486.70 but got 0
-   > Still returning 0? Replace the stub with your calculation.
+   > For annual_cost = 14601, credits = 15, expected the number 486.70 but got text: '486.70'
+   > Return the number itself. Format it as money only when you print it.
 [FAIL] cost_per_class gives back the right values  (0/6 pts)
-   > For annual_cost = 14601, credits = 15, expected 32.45 but got 0
-   > Still returning 0? Replace the stub with your calculation.
+   > For annual_cost = 14601, credits = 15, expected the number 32.45 but got text: '32.45'
+   > Return the number itself. Format it as money only when you print it.
 
 --- Your program (10 points) ---
-[FAIL] The menu runs from start to Q without an error  (0/5 pts)
-   > Your program ran to Q, but none of the five amounts ever appeared.
-   > Add the two input prompts and connect menu options 1 to 5 to your functions.
-[SKIP] Options 1 to 5 print all five amounts  (0/5 pts)
+[PASS] The menu runs from start to Q without an error  (5/5 pts)
+[PASS] Options 1 to 5 print all five amounts  (5/5 pts)
 
 --- Git and GitHub (required for your points to count) ---
 [PASS] Git is installed
 [PASS] This folder is a Git repository
-[FAIL] You have committed your own work
-   > So far there is only the template's first commit.
-   > In Source Control, type a message and click Commit.
+[PASS] You have committed your own work
+[FAIL] Your latest changes are committed
+   > main.py or AI_NOTES.md has changes that are not committed yet.
+   > Save, then Commit in Source Control, so GitHub has what check.py tested.
 
-POINTS FROM check.py: 0 / 40
+POINTS FROM check.py: 10 / 40
 
 NOTE: AI_NOTES.md still has (write here) placeholders. Fill it in before you submit.
 
 ================================================================
 PROGRAM OUTPUT  (typed: 14601, 15, 1, 2, 3, 4, 5, Q)
 ================================================================
-Choose an option: Choose an option: Choose an option: Choose an option: Choose an option: Choose an option: Choose an option: Choose an option:
+Total Cost for one year: Credits this semester: Options:
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+Q. Quit
+
+Choose an option: $7300.50
+Options:
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+Q. Quit
+
+Choose an option: $1622.33
+Options:
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+Q. Quit
+
+Choose an option: $97.34
+Options:
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+Q. Quit
+
+Choose an option: $486.70
+Options:
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+Q. Quit
+
+Choose an option: $32.45
+Options:
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+Q. Quit
+
+Choose an option: Thank you for using CoA calculator.
