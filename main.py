@@ -17,28 +17,28 @@ CS1430_MEETINGS_PER_SEMESTER = 45
 
 def cost_per_semester(annual_cost):
     semCost = annual_cost / SEMESTERS_PER_YEAR
-    return f"{semCost:.2f}"
+    return semCost
 
 
 def cost_per_month(annual_cost):
     """Give back what one month of the academic year costs."""
     monCost = annual_cost / MONTHS_PER_YEAR
-    return f"{monCost:.2f}"
+    return monCost
 
 
 def cost_per_day(annual_cost):
     dayCost = annual_cost / (SEMESTERS_PER_YEAR * CLASS_DAYS_PER_SEMESTER)
-    return f"{dayCost:.2f}"
+    return dayCost
 
 
 def cost_per_credit(annual_cost, credits):
     credCost = (annual_cost / credits)/SEMESTERS_PER_YEAR
-    return f"{credCost:.2f}"
+    return credCost
 
 
 def cost_per_class(annual_cost, credits):
-    classCost = float(cost_per_credit(annual_cost,credits)) * CS1430_CREDITS / CS1430_MEETINGS_PER_SEMESTER
-    return f"{classCost:.2f}"
+    classCost = cost_per_credit(annual_cost,credits) * CS1430_CREDITS / CS1430_MEETINGS_PER_SEMESTER
+    return classCost
 
 
 # ---- PROGRAM ----
@@ -56,15 +56,15 @@ def main():
         if choice == "q":
             break
         elif choice == "1":
-            print("$" + str(cost_per_semester(annual_cost)))   
+            print(f"${cost_per_semester(annual_cost):.2f}")   
         elif choice == "2":
-            print("$" + str(cost_per_month(annual_cost)))
+            print(f"${cost_per_month(annual_cost):.2f}")
         elif choice == "3":
-            print("$" + str(cost_per_day(annual_cost)))
+            print(f"${cost_per_day(annual_cost):.2f}")
         elif choice == "4":
-            print("$" + str(cost_per_credit(annual_cost, credits)))
+            print(f"${cost_per_credit(annual_cost, credits):.2f}")
         elif choice == "5":
-            print("$" + str(cost_per_class(annual_cost, credits)))
+            print(f"${cost_per_class(annual_cost, credits):.2f}")
         else:
             print("Invalid option. Please try again.")
 
