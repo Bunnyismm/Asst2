@@ -11,7 +11,7 @@ MONTHS_PER_YEAR = 9
 CLASS_DAYS_PER_SEMESTER = 75
 CS1430_CREDITS = 3
 CS1430_MEETINGS_PER_SEMESTER = 45
-
+MINUTES_PER_CREDIT = 2250
 
 # ---- FUNCTIONS: replace each return 0 ----
 
@@ -40,6 +40,9 @@ def cost_per_class(annual_cost, credits):
     classCost = cost_per_credit(annual_cost,credits) * CS1430_CREDITS / CS1430_MEETINGS_PER_SEMESTER
     return classCost
 
+def cost_per_minute(annual_cost, credits):
+    minuteCost = cost_per_semester(annual_cost) / (credits * MINUTES_PER_CREDIT)
+    return minuteCost
 
 # ---- PROGRAM ----
 def main():
@@ -49,7 +52,7 @@ def main():
     credits = float(input("Credits this semester: "))
     while True:
         # Show your menu here.
-        print("Options:\n1. Cost per semester\n2. Cost per month\n3. Cost per day\n4. Cost per credit\n5. Cost per class\nQ. Quit\n")
+        print("Options:\n1. Cost per semester\n2. Cost per month\n3. Cost per day\n4. Cost per credit\n5. Cost per class\n6. Cost per minute\nQ. Quit\n")
         choice = str(input("Choose an option: ")).lower()
 
 
@@ -65,6 +68,8 @@ def main():
             print(f"${cost_per_credit(annual_cost, credits):.2f}")
         elif choice == "5":
             print(f"${cost_per_class(annual_cost, credits):.2f}")
+        elif choice == "6":
+            print(f"${cost_per_minute(annual_cost, credits):.2f}")
         else:
             print("Invalid option. Please try again.")
 
